@@ -20,7 +20,7 @@
 
 .destination .slider_AutoScroll {
     margin-block: 5rem;
-
-    /*  To ensure that the slices do not stick to the edge **/
+    
+    /*  To ensure that the slices do not stick to the edge * */
     padding: 0 25px;
 }

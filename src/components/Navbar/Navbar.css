@@ -36,131 +36,132 @@
     background-color: #000;
 }
 
-    .navbar .logo {
-        font-size: 2.5rem;
-        color: var(--white);
-        font-family: var(--Kings-font);
-    }
+.navbar .logo {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-family: var(--Kings-font);
+}
 
-    .navbar .content {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-        align-items: center;
+.navbar .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.search {
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar .content .navlinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar .content .navlinks a {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 600;
+    padding-block: 10px;
+
+    position: relative;
+
+}
+
+.navbar .content .navlinks a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+
+    transition: .3s;
+}
+
+.navbar .content .navlinks a:hover:after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    color: var(--white)
+}
+
+/* responsive navbar */
+@media screen and (max-width:992px) {
+    .hamburger {
+        display: block;
     }
 
     .search {
-        border: none;
-        background-color: transparent;
-        color: var(--white);
-        font-size: 1.5rem;
-        cursor: pointer;
+        display: none;
     }
+
 
     .navbar .content .navlinks {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .navbar .content .navlinks a {
-        color: var(--white);
-        font-size: 1.2rem;
-        font-family: var(--Urbanist-font);
-        font-weight: 600;
-        padding-block: 10px;
-
-        position: relative;
-
-    }
-
-    .navbar .content .navlinks a:after {
-        content: "";
-        width: 0;
-        height: 2px;
+        flex-direction: column;
+        border-radius: 10px;
         background-color: var(--white);
+        align-items: center;
+        margin-top: 10px;
+        padding: 20px;
+
+        width: 80%;
+        border: 1px solid rgba(208, 201, 201, 0.5);
+        border-top-width: 0;
         position: absolute;
-        bottom: -3px;
-        left: 0;
-
-        transition: .3s;
-    }
-
-    .navbar .content .navlinks a:hover:after {
-        width: 100%;
-    }
-
-    .hamburger {
-        display: none;
-        color: var(--white)
-    }
-
-    /* responsive navbar */
-    @media screen and (max-width:992px) {
-        .hamburger {
-            display: block;
-        }
-
-        .search {
-            display: none;
-        }
+        top: 69px;
 
 
-        .navbar .content .navlinks {
-            flex-direction: column;
-            border-radius: 10px;
-            background-color: var(--white);
-            align-items: center;
-            margin-top: 10px;
-            padding: 20px;
+        z-index: 999;
 
-            width: 80%;
-            border: 1px solid rgba(208, 201, 201, 0.5);
-            border-top-width: 0;
-            position: absolute;
-            top: 69px;
-            left: 50%;
-            transform: translateX(-50%);
-
-            z-index: 999;
-
-            /*
+        /*
             nav-menu =>  show when opacity : 1  / hide when opacity:0
         */
 
-            transition: transform 0.3s ease, opacity 0.3s
-        }
+        transition: all 0.5s
+    }
 
-        .dark-menu {
-            background-color: #000;
-        }
+    .dark-menu {
+        background-color: #000;
+    }
 
-        .show-navlinks {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .hide-navlinks {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-
-        .navbar .content .navlinks li {
-            width: 100%;
-            display: block;
-            text-align: center;
-        }
-
-        .navbar .content .navlinks a {
-            color: #000;
-
-            width: 100%;
-            display: block;
-        }
-
-        .navbar .content .navlinks a:after {
-            display: none;
-        }
+    .show-navlinks {
+        left: 50%;
+        transform: translateX(-50%);
 
     }
+
+    .hide-navlinks {
+        left: -100%;
+
+
+    }
+
+    .navbar .content .navlinks li {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .content .navlinks a {
+        color: #000;
+
+        width: 100%;
+        display: block;
+    }
+
+    .navbar .content .navlinks a:after {
+        display: none;
+    }
+
+}

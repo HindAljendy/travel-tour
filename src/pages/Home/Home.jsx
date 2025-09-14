@@ -9,6 +9,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Destination_section/>
+     
     </>
 
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Destination_section.css'
 import SectionTitle from '../../SectionTitle/SectionTitle'
 import Slider from 'react-slick';
@@ -11,68 +11,40 @@ import { Link } from 'react-router-dom';
 
 const Destination_section = () => {
 
+  const sliderRef = useRef(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      if (sliderRef.current) {
+        sliderRef.current.slickGoTo(0); // أو أي إعادة تهيئة مناسبة
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const settings = {
     dots: false,
     arrows: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: windowWidth < 600 ? 1 : windowWidth < 1024 ? 2 : 3,
     slidesToScroll: 1,
     speed: 600,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1399,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
 
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 630,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false,
-
-        }
-      }
-    ]
   };
   return (
     <div className='section destination'>
       <SectionTitle />
 
       <div className="slider_AutoScroll">
-        <Slider {...settings}>
+        <Slider {...settings} ref={sliderRef}>
 
           {
             Destninations.map(destination => {
