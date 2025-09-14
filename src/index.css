@@ -1,0 +1,48 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kings&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    /* background-color: #9da5ad; */
+    height: 10000px;
+}
+:root{
+    /* fonts variables */
+    --Poppins-font: "Poppins", sans-serif;
+    --Kings-font:"Kings", cursive;
+    --Urbanist-font:"Urbanist", sans-serif;
+
+    /* colors variables */
+    --white:#fff;
+    --text-color:#2B2A30;
+    --secondary:#54595f;
+    --primary-color:#4400E7;
+    --primary-dark:#281963;
+    --primary-light:#D3DFE9;
+    --pg-color:#363539;
+    --top-color:#f7f7f7;
+    --btn-dark:#212529;
+    --border-color:#4F4e5426;
+    --icon-prim-color:#3D6AD6;
+    --icon-sec-color:#E60023;
+    --footer-color:#183153;
+    --social-color:#434cda;
+
+    --prim-gradiant:linear-gradient(90deg, #4300e7 0%, #7d00fc 100%);
+    --btn-light:linear-gradient(90deg,#4300e7 0% , #7d00fc 100%);
+
+}

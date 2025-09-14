@@ -1,0 +1,31 @@
+.container-hero {
+    width: 100%;
+}
+
+
+/* Arrow Slider : */
+.next-arrow,
+.prev-arrow {
+    color: #9b9b9b;
+    font-size: 7rem;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+
+    cursor: pointer;
+    transition: color 0.3s;
+    
+}
+
+.prev-arrow {
+    left: 10%;
+}
+
+.next-arrow {
+    right: 10%;
+}
+
+.next-arrow:hover,
+.prev-arrow:hover {
+    color: var(--white);
+}
