@@ -1,0 +1,230 @@
+.blog-open .content-page-blogOpen {
+    width: 68%;
+}
+
+.blog-open .second-part {
+    width: 28%;
+}
+
+.blog-open .all-parts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.blog-open .content-page-blogOpen p {
+    font-size: 20px;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.blog-open .content-page-blogOpen .main-title {
+    font-size: 30px;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    color: var(--primary-dark);
+    text-transform: capitalize;
+    margin-bottom: 1.2rem;
+}
+
+.blog-open .content-page-blogOpen .table-contents {
+    margin-top: 2.5rem;
+    width: max-content;
+    padding: 10px;
+    background-color: rgb(199, 186, 186);
+
+    margin-bottom: 2rem;
+}
+
+.blog-open .content-page-blogOpen .table-contents h5 {
+    font-size: 20px;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.blog-open .content-page-blogOpen .table-contents h5 span {
+    font-size: 18px;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    color: var(--social-color);
+    padding-bottom: 1px;
+    padding-inline: 0.4rem;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.blog-open .content-page-blogOpen .table-contents h5 span:hover,
+.blog-open .content-page-blogOpen .list-contents ol li:hover {
+    color: var(--light-blue);
+    border-bottom: 1px dashed var(--light-blue);
+}
+
+.blog-open .content-page-blogOpen .list-contents {
+    margin-top: 1.2rem;
+
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.blog-open .content-page-blogOpen .list-contents.show {
+    opacity: 1;
+    max-height: 1000px;
+}
+
+.blog-open .content-page-blogOpen .list-contents ol {
+    list-style: none;
+    counter-reset: numbers;
+}
+
+
+.blog-open .content-page-blogOpen .list-contents ol li {
+    font-size: 19px;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    color: var(--social-color);
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+
+    counter-increment: numbers;
+
+    transition: all 0.5s;
+}
+
+.blog-open .content-page-blogOpen .list-contents ol li:before {
+    content: counter(numbers) ")";
+    font-family: var(--lato-font);
+    margin-right: 0.5rem;
+}
+
+.blog-open .content-page-blogOpen .contents-page>div {
+    scroll-margin-top: 80px;
+}
+
+/* Responsive */
+@media screen and (max-width:1400px) {
+
+    .blog-open .content-page-blogOpen {
+        width: 60%;
+    }
+
+    .blog-open .second-part {
+        width: 36%;
+    }
+
+    .blog-open .content-page-blogOpen p {
+        font-size: 18px;
+    }
+
+    .blog-open .content-page-blogOpen .main-title {
+        font-size: 25px;
+    }
+
+    .blog-open .content-page-blogOpen .table-contents h5 {
+        font-size: 18px;
+    }
+
+    .blog-open .content-page-blogOpen .table-contents h5 span {
+        font-size: 17px;
+    }
+
+    .blog-open .content-page-blogOpen .list-contents ol li {
+        font-size: 17px;
+    }
+
+    .blog-open .content-page-blogOpen .contents-page>div {
+        scroll-margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+
+    .blog-open .content-page-blogOpen {
+        width: 59%;
+    }
+
+    .blog-open .second-part {
+        width: 37%;
+    }
+
+    .blog-open .content-page-blogOpen p {
+        font-size: 16px;
+    }
+
+    .blog-open .content-page-blogOpen .main-title {
+        font-size: 22px;
+    }
+
+    .blog-open .content-page-blogOpen .table-contents h5 {
+        font-size: 16px;
+    }
+
+    .blog-open .content-page-blogOpen .table-contents h5 span {
+        font-size: 16px;
+    }
+
+    .blog-open .content-page-blogOpen .list-contents ol li {
+        font-size: 16px;
+    }
+
+    .blog-open .content-page-blogOpen .contents-page>div {
+        scroll-margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .blog-open .all-parts {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .blog-open .content-page-blogOpen {
+        width: 100%;
+    }
+
+    .blog-open .second-part {
+        width: 100%;
+    }
+
+    .blog-open .content-page-blogOpen p {
+        font-size: 18px;
+    }
+
+    .blog-open .content-page-blogOpen .main-title {
+        font-size: 25px;
+    }
+
+    .blog-open .content-page-blogOpen .table-contents h5 {
+        font-size: 18px;
+    }
+
+    .blog-open .content-page-blogOpen .table-contents h5 span {
+        font-size: 17px;
+    }
+
+    .blog-open .content-page-blogOpen .list-contents ol li {
+        font-size: 17px;
+    }
+
+    .blog-open .content-page-blogOpen .contents-page>div {
+        scroll-margin-top: 180px;
+    }
+}
+
+@media screen and (max-width:492px) {
+    .blog-open .content-page-blogOpen .contents-page>div {
+        scroll-margin-top: 500px;
+    }
+
+    .blog-open .content-page-blogOpen .main-title {
+        font-size: 22px;
+    }
+}

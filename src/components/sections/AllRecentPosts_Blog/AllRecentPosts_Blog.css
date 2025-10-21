@@ -1,0 +1,48 @@
+.AllRecentPosts_Blog {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    margin-top: 2.5rem;
+}
+
+.AllRecentPosts_Blog h3 {
+    font-family: var(--Urbanist-font);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.AllRecentPosts_Blog h3::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #dbd5d5e7;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 40px;
+}
+
+.AllRecentPosts_Blog h3::before {
+    content: '';
+    width: 20%;
+    height: 4px;
+    background-color: var(--light-blue);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 40px;
+
+    z-index: 1;
+}
+
+/* Responsive */
+@media screen and (max-width:1400px) {
+    .AllRecentPosts_Blog h3 {
+        font-size: 16px;
+    }
+}

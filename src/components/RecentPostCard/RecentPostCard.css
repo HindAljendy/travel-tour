@@ -1,0 +1,48 @@
+.RecentPostCard {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    cursor: pointer;
+}
+
+.RecentPostCard img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.RecentPostCard .info small {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 600;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.RecentPostCard .info p {
+    font-size: 18px;
+    font-family: var(--Urbanist-font);
+    line-height: 1.3;
+    font-weight: 700;
+    color: var(--pg-color);
+    width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width:1199px) {
+    .RecentPostCard .info p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:992px) {
+    .RecentPostCard .info p {
+    font-size: 17px;
+    }
+}

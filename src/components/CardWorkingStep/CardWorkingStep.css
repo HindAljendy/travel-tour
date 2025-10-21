@@ -1,0 +1,80 @@
+.Card-WorkingStep {
+    width: 350px;
+
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 1.5rem;
+    background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+.Card-WorkingStep .image-card {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #e6eff2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s ease-in-out;
+}
+
+.Card-WorkingStep .image-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.Card-WorkingStep:hover .image-card {
+    /* Refresh images */
+    transform: scale(-1) rotate(180deg);
+}
+
+.Card-WorkingStep .bg-image-card2 {
+    background-color: #f2e5ff;
+}
+
+.Card-WorkingStep .bg-image-card3 {
+    background-color: #FFF6e6;
+}
+
+.Card-WorkingStep .card-content h2 {
+    font-size: 1.7rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 600;
+    color: var(--text-color);
+
+    margin-bottom: 1rem;
+
+}
+
+.Card-WorkingStep .card-content p {
+    font-size: 1rem;
+    font-family: var(--Urbanist-font);
+    color: var(--secondary);
+}
+
+/* Responsive */
+@media screen and (max-width:1399px) {
+    .Card-WorkingStep {
+        width: 300px;
+    }
+
+    .Card-WorkingStep .card-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Card-WorkingStep {
+        width: 100%;
+    }
+}

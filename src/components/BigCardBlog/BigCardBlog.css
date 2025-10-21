@@ -1,0 +1,123 @@
+.BigCardBlog {
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.BigCardBlog .main-image {
+    width: 100%;
+    height: 370px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.BigCardBlog .body-card {
+    padding: 1.5rem;
+}
+
+.BigCardBlog .body-card .details-publish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BigCardBlog .body-card .image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.BigCardBlog .body-card span {
+    color: var(--primary-dark);
+    font-weight: 800;
+    font-size: 1.1rem;
+    font-family: var(--Urbanist-font);
+}
+
+.BigCardBlog .body-card h3 {
+    color: var(--pg-color);
+    font-weight: 800;
+    font-size: 32px;
+    font-family: var(--Urbanist-font);
+    cursor: pointer;
+    transform: 0.5s;
+    margin-top: 10px;
+}
+
+.BigCardBlog .body-card h3:hover {
+    color: var(--light-blue);
+    text-decoration: 2px underline var(--light-blue);
+}
+
+.BigCardBlog .body-card p {
+    text-align: justify;
+    width: 98%;
+    color: var(--pg-color);
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--Urbanist-font);
+    margin-top: 20px;
+}
+
+.BigCardBlog .body-card button {
+    border: none;
+    text-transform: capitalize;
+    background-color: #6596ff;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--Urbanist-font);
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 20px auto;
+
+    transform: 0.5s;
+}
+
+.BigCardBlog .body-card button:hover {
+    color: var(--light-blue);
+    background-color: #fff;
+    border: 2px solid var(--light-blue);
+}
+
+/* Responsive */
+@media screen and (max-width:1399px) {
+    .BigCardBlog .body-card span {
+        font-size: 1rem;
+    }
+
+    .BigCardBlog .body-card h3 {
+        font-size: 28px;
+    }
+
+    .BigCardBlog .body-card p {
+        font-size: 17px;
+    }
+
+    .BigCardBlog .body-card button {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1199px) {
+    .BigCardBlog .body-card span {
+        font-size: 0.9rem;
+    }
+
+    .BigCardBlog .body-card h3 {
+        font-size: 25px;
+    }
+
+    .BigCardBlog .body-card p {
+        font-size: 16px;
+    }
+
+    .BigCardBlog .body-card button {
+        font-size: 16px;
+    }
+}

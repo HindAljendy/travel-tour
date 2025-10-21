@@ -1,0 +1,25 @@
+.top-destinations .about-title h5 {
+    margin-right: 15px;
+}
+
+.top-destinations .All-cards {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+@media screen and (max-width:992px) {
+    .top-destinations .All-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .top-destinations .All-cards {
+        grid-template-columns: 1fr;
+    }
+}

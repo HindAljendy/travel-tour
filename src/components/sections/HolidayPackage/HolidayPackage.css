@@ -1,0 +1,29 @@
+.holiday-package .about-title {
+    align-items: flex-start;
+}
+
+.holiday-package .All-cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.holiday-package .opinion a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+@media screen and (max-width:1212px) {
+    .holiday-package .All-cards {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:993px) {
+    .holiday-package .All-cards {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+}

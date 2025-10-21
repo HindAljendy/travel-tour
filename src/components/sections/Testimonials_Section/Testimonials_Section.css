@@ -1,0 +1,42 @@
+.testimonial {
+    position: relative;
+}
+
+.testimonial .Image-right {
+    max-width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.3;
+
+}
+
+.testimonial .Image-left {
+    max-width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transform: rotate(180deg);
+}
+
+.testimonial .Slider-testimonials {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width:576px) {
+    .testimonial .Image-left {
+        top: 20%;
+    }
+
+    .testimonial .Image-right {
+        display: none;
+    }
+
+}

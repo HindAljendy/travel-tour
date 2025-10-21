@@ -1,0 +1,35 @@
+.about-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--Urbanist-font);
+}
+
+.about-title h5 {
+    font-family: inherit;
+    font-size: 2rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.about-title h2 {
+    font-size: 3rem;
+    font-family: inherit;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+@media screen and (max-width:1399px) {
+
+    .about-title h5 {
+        font-size: 1.5rem;
+    }
+
+    .about-title h2 {
+        font-size: 2.5rem;
+    }
+}

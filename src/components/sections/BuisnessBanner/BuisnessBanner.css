@@ -1,0 +1,40 @@
+.buisness-banner {
+    background-color: #f7ffc4;
+}
+
+.buisness-banner .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buisness-banner .title h2 {
+    font-size: 3rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 800;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.buisness-banner .slider_AutoScroll {
+    width: 100%;
+    margin-top: 5rem;
+    margin-left: 5%;
+}
+
+/* Responsive */
+@media screen  and (max-width:1399px){
+    .buisness-banner .title h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen  and (max-width:767px){
+    .buisness-banner .slider_AutoScroll {
+        margin-left: 3%;
+    }
+    .buisness-banner .slider_AutoScroll .brand-image img{
+        width: 75%;
+        object-fit: cover;
+    }
+}

@@ -27,7 +27,8 @@
 
 .navbar.light-nav .content .navlinks a,
 .navbar.light-nav .logo,
-.navbar.light-nav .search {
+.navbar.light-nav .search ,
+.navbar.light-nav .hamburger {
     color: #000
 }
 

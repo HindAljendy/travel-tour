@@ -2,18 +2,16 @@ import React from 'react'
 import imgPlane from './../../assets/plane.svg'
 import './SectionTitle.css'
 
-const SectionTitle = () => {
+const SectionTitle = ({small_title , title , text}) => {
     return (
         <div className='section-title'>
             <div className='main-title'>
                 <img src={imgPlane} alt="imgPlane" />
-                <span>Travel Destinatinations</span>
+                <span>{small_title}</span>
                 <img src={imgPlane} alt="imgPlane" />
             </div>
-            <h2>Top Destinations</h2>
-            <p>Explore our top destinations  voted by more 
-                than 100,000+ customers around the world.
-            </p>
+            <h2>{title}</h2>
+            <p>{text}</p>
 
         </div>
     )

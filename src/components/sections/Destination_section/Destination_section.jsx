@@ -18,7 +18,7 @@ const Destination_section = () => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
       if (sliderRef.current) {
-        sliderRef.current.slickGoTo(0); // أو أي إعادة تهيئة مناسبة
+        sliderRef.current.slickGoTo(0); // اعادة تهيئة السلايدر
       }
     };
 
@@ -30,7 +30,7 @@ const Destination_section = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    slidesToShow: windowWidth < 600 ? 1 : windowWidth < 1024 ? 2 : 3,
+    slidesToShow: windowWidth < 630 ? 1 : windowWidth < 1024 ? 2 : 3,
     slidesToScroll: 1,
     speed: 600,
     initialSlide: 0,
@@ -41,7 +41,11 @@ const Destination_section = () => {
   };
   return (
     <div className='section destination'>
-      <SectionTitle />
+      <SectionTitle
+        small_title="Travel Destinatinations"
+        title="Top Destinations"
+        text="Explore our top destinations  voted by more than 100,000+ customers around the world."
+      />
 
       <div className="slider_AutoScroll">
         <Slider {...settings} ref={sliderRef}>
@@ -63,7 +67,7 @@ const Destination_section = () => {
           }
         </Slider>
 
-        <p className='opinion'>Want To See Our Top Destinations. <Link>click hee to view more.</Link></p>
+        <p className='opinion'>Want To See Our Top Destinations. <Link to="/destinations">click here to view more.</Link></p>
 
       </div>
 

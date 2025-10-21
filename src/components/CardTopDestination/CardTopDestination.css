@@ -1,0 +1,194 @@
+.card-top-destination {
+    max-width: 390px;
+    height: 450px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 11px 40px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.card-top-destination .Image {
+    width: 100%;
+    height: 320px;
+
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.card-top-destination img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.card-top-destination .Image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--prim-gradiant);
+    opacity: 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card-top-destination .Image:hover:after {
+    opacity: 0.5;
+}
+
+.card-top-destination .Image .icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card-top-destination .Image:hover .icons {
+    opacity: 1;
+}
+
+.card-top-destination .Image .icons .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+
+}
+.card-top-destination .Image .icons .circle a{
+    color: black;
+}
+.card-top-destination .Image .icons .icon-play {
+    font-size: 2rem;
+    stroke: black;
+    stroke-width: 1.5px;
+    fill: transparent;
+
+    z-index: 2;
+    position: relative;
+    transition: 0.5s;
+}
+
+.card-top-destination .Image .icons .icon-link {
+    transform: rotate(-15deg);
+    font-size: 2rem;
+
+    z-index: 2;
+    position: relative;
+    transition: 0.5s;
+}
+
+.card-top-destination .Image .icons .circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: var(--prim-gradiant);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+.card-top-destination .Image .icons .circle:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+.card-top-destination .Image .icons .circle:hover .icon-link {
+    color: var(--white);
+}
+
+.card-top-destination .Image .icons .circle:hover .icon-play {
+    stroke: var(--white);
+}
+
+
+.card-top-destination .info {
+    padding-inline: 15px;
+    padding-block: 15px;
+    border-bottom: 1px solid #eae8e8;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-top-destination .info span ,
+.card-top-destination .info a{
+    font-family: var(--Urbanist-font);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+
+}
+
+.card-top-destination .info span.name-place {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card-top-destination .info span.name-place:hover {
+    text-decoration: underline 2px var(--text-color);
+}
+
+.card-top-destination .days {
+    padding-inline: 15px;
+    padding-block: 15px;
+}
+
+.card-top-destination .days span {
+    font-family: var(--Urbanist-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-top-destination .days .icon {
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width:1399px) {
+    .card-top-destination .info span {
+        font-size: 1.2rem;
+    }
+
+    .card-top-destination .days span {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width:576px) {
+    .card-top-destination {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

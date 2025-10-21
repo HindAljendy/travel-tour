@@ -1,0 +1,141 @@
+.reviews {
+    overflow: hidden;
+}
+
+.reviews .content-reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews .content-reviews .part-one {
+    width: 40%;
+}
+
+.reviews .content-reviews .part-two {
+    width: 40%;
+}
+
+.reviews .about-title {
+    align-items: flex-start;
+    width: 80%;
+}
+
+.reviews button {
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--pg-color);
+    color: var(--white);
+    word-spacing: 2px;
+    font-size: 1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.reviews button::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: var(--prim-gradiant);
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    transition: 0.5s;
+}
+
+.reviews button:hover::before {
+    width: 100%;
+}
+
+.reviews .text {
+    font-size: 1.1rem;
+    font-family: var(--Urbanist-font);
+    color: var(--secondary);
+    line-height: 1.3;
+    margin-block: 20px;
+
+    width: 80%;
+}
+
+.reviews .slider_AutoPlay_GrapCursor {
+    width: 100%;
+    height: 100%;
+}
+
+.reviews .mySwiper .swiper-slide-shadow {
+    background: #f1ebe4 !important;
+    box-shadow: none;
+}
+
+/* Responsive */
+@media screen and (max-width:1500px) {
+    .reviews .content-reviews .part-one {
+        width: 44%;
+    }
+
+    .reviews .content-reviews .part-two {
+        width: 49%;
+    }
+
+    .reviews .about-title {
+        align-items: flex-start;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1032px) {
+    .reviews .content-reviews .part-one {
+        width: 48%;
+    }
+
+    .reviews .content-reviews .part-two {
+        width: 49%;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .reviews .content-reviews {
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+    }
+
+    .reviews .content-reviews .part-one {
+        width: 100%;
+    }
+
+    .reviews .content-reviews .part-two {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:758px) and (min-width:690px) {
+    .reviews .about-title {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .reviews .about-title {
+        width: 80%;
+    }
+}
+@media screen and (max-width:428px) {
+    .reviews .about-title {
+        width: 100%;
+    }
+}

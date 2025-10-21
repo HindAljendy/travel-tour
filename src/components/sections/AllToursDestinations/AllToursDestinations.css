@@ -1,0 +1,235 @@
+.AllToursDestinations.section{
+    padding-bottom: 0;
+}
+.AllToursDestinations .content-tours-destinations {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.AllToursDestinations .content-tours-destinations .part-left {
+    width: 38%;
+}
+
+.AllToursDestinations .content-tours-destinations .part-right {
+    width: 60%;
+}
+
+.AllToursDestinations .content-tours-destinations .part-left.sticky {
+    position: sticky;
+    top: 100px;
+    left: 0;
+    height: 100%;
+}
+
+.AllToursDestinations .tour-category {
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.AllToursDestinations .tour-category h2 {
+    font-family: var(--Urbanist-font);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.AllToursDestinations .tour-category button {
+    width: 150px;
+    height: 45px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.AllToursDestinations .tour-category button:hover {
+    background-color: darkblue;
+}
+
+.AllToursDestinations .tour-category-box {
+    border-radius: 4px;
+    padding-bottom: 12px;
+    margin-top: 2rem;
+
+    background-color: #f7f7f7;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.AllToursDestinations .tour-category-box h2 {
+    font-family: var(--Urbanist-font);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.AllToursDestinations .tour-category-box .box .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.5rem;
+}
+
+.AllToursDestinations .tour-category-box .box .option label {
+    font-family: var(--Urbanist-font);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.AllToursDestinations .tour-category-box .box .option span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #efefef;
+    font-size: 13px;
+    color: var(--pg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AllToursDestinations .sort {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.AllToursDestinations .sort span {
+    font-size: 1.25rem;
+    font-family: var(--Urbanist-font);
+    color: var(--text-color);
+}
+
+.AllToursDestinations .sort .icons-sort {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.AllToursDestinations .sort .icons-sort .icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: #000000a7;
+    border-radius: 5px;
+    border: 1px solid rgba(131, 131, 131, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.AllToursDestinations .sort .icons-sort .icon.show {
+    display: block;
+}
+
+.AllToursDestinations .sort .icons-sort .icon.active {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+
+.AllToursDestinations .showdata.grid-container {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.AllToursDestinations .showdata.list-container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width:1399px) {
+    .AllToursDestinations .sort .icons-sort .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .AllToursDestinations .content-tours-destinations {
+        gap: 2rem;
+    }
+
+    .AllToursDestinations .content-tours-destinations .part-left {
+        width: 30%;
+    }
+
+    .AllToursDestinations .content-tours-destinations .part-right {
+        width: 68%;
+    }
+
+    .AllToursDestinations .showdata.grid-container {
+        gap: 20px;
+    }
+
+    .AllToursDestinations .showdata.list-container {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .AllToursDestinations .content-tours-destinations {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4rem
+    }
+
+    .AllToursDestinations .content-tours-destinations .part-left {
+        width: 100%;
+    }
+
+    .AllToursDestinations .content-tours-destinations .part-right {
+        width: 100%;
+    }
+
+    .AllToursDestinations .content-tours-destinations .part-left.sticky {
+        position: static;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .AllToursDestinations .container {
+        width: 100%;
+        padding-inline: 30px;
+    }
+}
+
+@media screen and (max-width:582px) {
+    .AllToursDestinations .showdata.list-container {
+        width: 100%;
+    }
+
+    .AllToursDestinations .sort .icons-sort .icon.show {
+        display: none;
+    }
+}

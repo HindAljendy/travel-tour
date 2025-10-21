@@ -1,0 +1,294 @@
+.travel-place .content-travel-place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel-place .about-title {
+    align-items: flex-start;
+    width: 80%;
+}
+
+.travel-place .content-travel-place .part-one {
+    width: 30%;
+}
+
+.travel-place .content-travel-place .part-two {
+    width: 65%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.travel-place .part-one .info {
+    position: relative;
+}
+
+.travel-place .part-one .info .circles {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.travel-place .number-increase {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--Kings-font);
+    background: var(--prim-gradiant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-place .part-one .info span {
+    position: absolute;
+    bottom: -26px;
+    right: 30%;
+    font-size: 1.3rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.travel-place .content-travel-place .part-two img {
+    width: 40%;
+    border-radius: 200px;
+}
+
+.travel-place .content-travel-place .part-two .text h4 {
+    font-size: 1.5rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.travel-place .content-travel-place .part-two .text p {
+    font-size: 1.1rem;
+    font-family: var(--Urbanist-font);
+    color: var(--secondary);
+    margin-block: 15px;
+}
+
+.travel-place .content-travel-place .part-two .text .overlay-text {
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+    transform: translateX(-50px);
+
+    width: 350px;
+}
+
+.travel-place .content-travel-place .part-two .text .overlay-text img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.travel-place .content-travel-place .part-two .text .overlay-text h6 {
+    font-size: 1.3rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 800;
+    color: var(--text-color);
+    text-align: start;
+    line-height: 1.3;
+}
+
+.travel-place .content-travel-place .part-two .text ul li .icon {
+    font-size: 18px;
+    stroke-width: 3;
+    padding: 2px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.travel-place .content-travel-place .part-two .text ul li {
+    font-size: 1.1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media screen and (max-width:1736px) {
+    .travel-place .about-title {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .travel-place .content-travel-place .part-one {
+        width: 32%;
+    }
+
+    .travel-place .content-travel-place .part-two {
+        width: 63%;
+    }
+
+    .travel-place .about-title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .travel-place .about-title {
+        width: 85%;
+    }
+
+    .travel-place .part-one .info span {
+        font-size: 15px;
+    }
+
+    .travel-place .content-travel-place .part-two .text h4 {
+        font-size: 21.8px;
+    }
+
+    .travel-place .content-travel-place .part-two .text p {
+        font-size: 1rem;
+    }
+
+    .travel-place .content-travel-place .part-two .text .overlay-text h6 {
+        font-size: 1.1rem;
+    }
+
+    .travel-place .content-travel-place .part-two .text ul li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:1278px) {
+    .travel-place .about-title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .travel-place .about-title h2 {
+        width: 88%;
+        font-size: 2rem;
+    }
+
+    .travel-place .images img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .travel-place .content-travel-place .part-two .text h4 {
+        font-size: 20.8px;
+        text-align: start;
+    }
+
+    .travel-place .content-travel-place .part-two .text p {
+        font-size: 15px;
+    }
+
+    .travel-place .content-travel-place .part-two .text .overlay-text h6 {
+        font-size: 16px;
+    }
+
+    .travel-place .content-travel-place .part-two .text ul li {
+        font-size: 15px;
+    }
+
+    .travel-place .part-one .info {
+        margin-left: 10px;
+    }
+
+    .travel-place .content-travel-place .part-two img {
+        width: 35%;
+    }
+
+    .travel-place .content-travel-place .part-two {
+        width: 66%;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .travel-place .about-title h2 {
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .travel-place .content-travel-place {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .travel-place .content-travel-place .part-one,
+    .travel-place .content-travel-place .part-two {
+        width: 100%;
+    }
+
+    .travel-place .images img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .travel-place .part-one .info span {
+        position: absolute;
+        bottom: -26px;
+        right: 55%;
+        font-size: 1.3rem;
+    }
+
+    .travel-place .content-travel-place .part-two .text h4 {
+        font-size: 1.5rem;
+    }
+
+    .travel-place .content-travel-place .part-two .text p {
+        font-size: 1.1rem;
+    }
+
+    .travel-place .content-travel-place .part-two .text .overlay-text h6 {
+        font-size: 1.3rem;
+    }
+
+    .travel-place .content-travel-place .part-two .text ul li {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .travel-place .content-travel-place .part-two {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        gap: 50px;
+        align-items: flex-start;
+    }
+
+    .travel-place .content-travel-place .part-two img {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .travel-place .content-travel-place .part-two .text .overlay-text {
+        transform: translateX(0);
+        margin-block: 30px;
+    }
+
+    .travel-place .part-one .info span {
+        position: absolute;
+        bottom: -26px;
+        right: 20%;
+    }
+}

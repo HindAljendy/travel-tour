@@ -1,0 +1,22 @@
+.All-Tours-Info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+@media screen and (max-width:992px) {
+    .All-Tours-Info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .All-Tours-Info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:428px) {
+    .All-Tours-Info {
+        grid-template-columns: 1fr;
+    }
+}

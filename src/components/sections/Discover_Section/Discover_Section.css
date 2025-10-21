@@ -1,0 +1,24 @@
+.content {
+    margin-block: 5rem;
+}
+
+.discover .content .container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width:992px) {
+    .discover .content .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width:767px) {
+    .discover .content .container-cards {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+}

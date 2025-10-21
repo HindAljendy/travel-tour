@@ -15,7 +15,7 @@ const Navbar = () => {
     useEffect(() => {
 
         const handleScroll = () => {
-            if (window.scrollY > 500) {
+            if (window.scrollY > 50) {
                 setSticky(true);
             }
             else {
@@ -44,7 +44,7 @@ const Navbar = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about-us">About</Link></li>
                         <li><Link to="/tour">Tour</Link></li>
-                        <li><Link to="/nlog">Blog</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>

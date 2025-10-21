@@ -1,0 +1,370 @@
+.travel-experience {
+    background: url('../../../assets/Experience-bg.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.travel-experience .about-title {
+    display: flex;
+    align-items: flex-start;
+}
+
+.travel-experience .about-title h2 {
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.travel-experience .content-travel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.travel-experience .find-more button {
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--pg-color);
+    color: var(--white);
+    word-spacing: 2px;
+    font-size: 1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.travel-experience .find-more button::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: var(--prim-gradiant);
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    transition: 0.5s;
+}
+
+.travel-experience .find-more button:hover::before {
+    width: 100%;
+}
+
+.travel-experience .find-more {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.travel-experience .find-more .small-circles {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.travel-experience .find-more .small-circles .number-increase {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--Kings-font);
+    background: var(--prim-gradiant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-experience .part-two {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+.travel-experience .part-two .image-travel {
+    width: 260px;
+    height: 260px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.travel-experience .part-two .top .image-travel:nth-child(2) {
+    transform: translateY(10px);
+}
+
+.travel-experience .part-two .bottom .image-travel:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.travel-experience .part-two .image-travel::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+.travel-experience .part-two .image-travel img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.travel-experience .part-two .image-travel .city {
+    padding: 5px 10px 5px 5px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 700;
+    background-color: #f1ebe6;
+    border-radius: 3px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* Responsive : */
+@media screen and (max-width:1482px) {
+    .travel-experience .about-title h2 {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width:1316px) {
+    .travel-experience .travel-info .info p {
+        width: 68%;
+    }
+
+    .travel-experience .find-more {
+        gap: 40px;
+    }
+
+    .travel-experience .find-more button {
+        padding-inline: 17px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1234px) {
+    .travel-experience .part-two .image-travel {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .travel-experience .content-travel {
+        grid-gap: 0px;
+    }
+
+    .travel-experience .part-two .image-travel {
+        width: 230px;
+        height: 230px;
+    }
+
+    .travel-experience .find-more button {
+        padding-inline: 15px;
+        font-size: 14px;
+    }
+
+    .travel-experience .find-more {
+        gap: 40px;
+    }
+
+    .travel-experience .images img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width:1127px) {
+    .travel-experience .about-title h2 {
+        width: 80%;
+    }
+
+    .travel-experience .part-two .image-travel {
+        width: 230px;
+        height: 230px;
+    }
+
+}
+
+@media screen and (max-width:1043px) {
+    .travel-experience .about-title h2 {
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    .travel-experience .part-two .image-travel {
+        width: 230px;
+        height: 230px;
+    }
+
+    .travel-experience .find-more {
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .travel-experience .travel-info .info p {
+        width: 69%;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .travel-experience .about-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .travel-experience .about-title h2 {
+        margin-bottom: 20px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .travel-experience .content-travel {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+    .travel-experience .part-one,
+    .travel-experience .part-two {
+        margin: 0 auto;
+    }
+
+    .travel-experience .part-two {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .travel-experience .part-two .image-travel {
+        width: 280px;
+        height: 280px;
+    }
+
+    .travel-experience .travel-info {
+        width: 87%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .travel-experience .travel-info .info h4 {
+        font-size: 22px;
+    }
+
+    .travel-experience .travel-info .info p {
+        font-size: 17px;
+    }
+
+    .travel-experience .find-more button {
+        padding-inline: 20px;
+        font-size: 1rem;
+    }
+
+    .travel-experience .images img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .travel-experience .find-more {
+        width: 87%;
+        margin: 0 auto;
+
+        margin-top: 50px;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .travel-experience .find-more .small-circles .number-increase {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .travel-experience .content-travel {
+        grid-gap: 70px;
+    }
+
+    .travel-experience .find-more {
+        width: 87%;
+        margin: 0 auto;
+        margin-top: 50px;
+        gap: 40px;
+        justify-content: flex-start;
+
+    }
+
+    .travel-experience .part-two .image-travel {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    .travel-experience .travel-info .info p {
+        width: 100%;
+    }
+
+    .travel-experience .images img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .travel-experience .part-two {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:567px) {
+    .travel-experience .part-two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .travel-experience .part-two .image-travel {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .travel-experience .find-more {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .travel-experience .find-more button {
+        padding-inline: 20px;
+        font-size: 1rem;
+    }
+
+    .travel-experience .images img {
+        width: 60px;
+        height: 60px;
+    }
+}

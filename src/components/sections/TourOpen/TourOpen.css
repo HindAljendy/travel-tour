@@ -1,0 +1,332 @@
+.tour-open.section {
+    padding-bottom: 0;
+}
+
+.tour-open .content-TourOpen {
+    margin-block: 1.5rem;
+}
+
+.tour-open .part-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.tour-open .part-top .tour-images {
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tour-open .part-top .tour-images .images-small {
+    cursor: pointer;
+}
+
+.tour-open .part-top .tour-images .images-small img {
+    width: 90%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.tour-open .part-top .main-image {
+    width: 50%;
+    height: 450px;
+    position: relative;
+}
+
+.tour-open .part-top .main-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-open .part-name {
+    width: 75%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour-open .part-name h2 {
+    font-size: 2.5rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    color: var(--footer-color);
+}
+
+.tour-open .part-moreInfo {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.tour-open button {
+    width: 180px;
+    height: 45px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: var(--Urbanist-font);
+    transition: background-color 0.3s;
+
+}
+
+.tour-open button:hover {
+    background-color: darkblue;
+}
+
+.tour-open .overview-part {
+    margin-top: 2rem;
+}
+
+.tour-open .overview-part h3 {
+    font-size: 2rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    color: var(--footer-color);
+    margin-bottom: 10px;
+}
+
+.tour-open .overview-part p {
+    font-size: 1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-align: justify;
+    margin-left: 20px;
+    width: 73%;
+}
+
+/* Form Enquiry style */
+.tour-open .Form-Tour {
+    width: 75%;
+    margin-top: 2rem;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tour-open .Form-Tour h4 {
+    font-size: 1.2rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.tour-open .Form-Tour h5 {
+    margin-block: 10px;
+    font-size: 1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.tour-open .Form-Tour form {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.tour-open .Form-Tour form .field {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.tour-open .Form-Tour form .inputs-form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.tour-open .Form-Tour form .field label {
+    display: block;
+    font-size: 1.1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.tour-open .Form-Tour form .field input[type]:not([type="submit"]),
+.tour-open .Form-Tour form .field select,
+.tour-open .Form-Tour form .field textarea {
+    width: 100%;
+    height: 62px;
+    display: block;
+    padding: 8px 12px 8px 20px;
+    border-radius: 200px;
+    background-color: #f7f7f7;
+    border: 1px solid #deede6;
+    box-shadow: none;
+    outline: none;
+    color: var(--text-color);
+    font-family: var(--Urbanist-font);
+    font-size: 0.9rem;
+}
+
+.tour-open .Form-Tour form .field select {
+    appearance: none;
+
+    background-image: url('./../../../assets/arrow-select.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    background-position: right 10px center;
+}
+
+.tour-open .Form-Tour form .field textarea {
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    resize: vertical;
+}
+
+.tour-open .Form-Tour form .button-submit input[type="submit"] {
+    width: 100%;
+    background-color: #5f00ff;
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tour-open .Form-Tour form .button-submit input[type="submit"]:hover {
+    background-color: #7a66aa;
+}
+
+.tour-open .Form-Tour form .field input[type]:not([type="submit"]):focus,
+.tour-open .Form-Tour form .field select:focus,
+.tour-open .Form-Tour form .field textarea:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .20rem #a5a3aa;
+}
+
+.Form-Tour .result {
+    margin-top: 1rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 600;
+}
+
+.Form-Tour .error {
+    margin-top: 1rem;
+    color: red;
+    font-size: 1.1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media screen and (max-width:1207px) {
+
+    .tour-open .part-name {
+        width: 85%;
+    }
+
+    .tour-open .part-moreInfo {
+        width: 90%;
+    }
+
+    .tour-open .overview-part p {
+        width: 83%;
+    }
+
+    .tour-open .Form-Tour {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .tour-open .part-name {
+        width: 90%;
+    }
+
+    .tour-open .part-moreInfo {
+        width: 95%;
+    }
+
+    .tour-open .overview-part p {
+        width: 87%;
+    }
+
+    .tour-open .Form-Tour {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .tour-open .part-name,
+    .tour-open .overview-part p,
+    .tour-open .part-moreInfo,
+    .tour-open .Form-Tour {
+        width: 100%;
+    }
+
+    .tour-open .overview-part p {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .tour-open .part-name {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .tour-open .part-name h2 {
+        font-size: 2rem;
+    }
+
+    .tour-open .part-top .tour-images {
+        width: 18%;
+    }
+
+    .tour-open .part-top .main-image {
+        width: 80%;
+    }
+
+    .tour-open .Form-Tour h4 {
+        font-size: 1rem;
+    }
+
+    .tour-open .Form-Tour form .inputs-form {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .tour-open .Form-Tour form .field label {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .tour-open .overview-part p {
+        width: 98%;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .tour-open .Form-Tour h4 {
+        text-align: center;
+    }
+}

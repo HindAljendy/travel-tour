@@ -1,0 +1,94 @@
+.blog-banner {
+    background-image: url('../../../assets/banner.webp');
+    background-position: center;
+    background-size: cover;
+
+    height: 60vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.blog-banner .section-title h2 {
+    width: 55%;
+    font-size: 3.5rem;
+
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.blog-banner .button-banner {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:1710px) and (min-width:1569px) {
+    .blog-banner .section-title h2 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1569px) and (min-width:1448px) {
+    .blog-banner .section-title h2 {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:1448px) and (min-width:1345px) {
+    .blog-banner .section-title h2 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1345px) and (min-width:1255px) {
+    .blog-banner .section-title h2 {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:1255px) and (min-width:1177px) {
+    .blog-banner .section-title h2 {
+        width: 77%;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:1177px) and (min-width:1062px) {
+    .blog-banner .section-title h2 {
+        width: 76%;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:1062px) and (min-width:968px) {
+    .blog-banner .section-title h2 {
+        width: 75%;
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .blog-banner .section-title h2 {
+        width: 75%;
+        font-size: 2.7rem;
+    }
+
+}
+
+@media screen and (max-width:783px) {
+    .blog-banner .section-title h2 {
+        width: 80%;
+        font-size: 2.4rem;
+    }
+}
+
+
+@media screen and (max-width:624px) {
+    .blog-banner .section-title h2 {
+        width: 100%;
+        font-size: 2.2rem;
+    }
+}

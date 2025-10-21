@@ -1,0 +1,80 @@
+.card-review {
+    width: 100%;
+    height: 350px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 50px;
+
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card-review img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.card-review p {
+    width: 90%;
+    font-size: 1.1rem; 
+    font-family: var(--Urbanist-font);
+    line-height: 1.3;
+    color: var(--white);
+    margin-block: 20px;
+}
+
+.card-review .more-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-review .more-info .person h3 {
+    background-color: var(--white);
+    color: var(--text-color);
+    font-family: var(--Urbanist-font);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 30px 30px 30px 0;
+    margin-bottom: 15px;
+}
+
+.card-review .more-info .person span {
+    background-color: var(--white);
+    color: var(--text-color);
+    font-family: var(--Urbanist-font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 0 0 30px 30px;
+}
+
+.card-review .more-info .stars .icon {
+    color: rgb(255, 251, 0);
+}
+
+@media screen and (max-width:1399px) {
+    .card-review {
+        padding: 30px;
+    }
+
+    .card-review p {
+        font-size: 16px;
+    }
+
+    .card-review .more-info .person h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-review .more-info .person span {
+        font-size: 0.7rem;
+    }
+}

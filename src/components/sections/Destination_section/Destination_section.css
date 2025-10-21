@@ -1,26 +1,29 @@
-.section {
-    padding-block: 3rem;
-
-    margin: 0 auto;
-}
-
 .destination {
     width: 100%;
 }
 
-.destination .opinion {
+.opinion {
     text-align: center;
     margin-top: 5rem;
     font-size: 1.25rem;
 }
 
-.destination .opinion a {
+.opinion a {
     text-decoration-line: underline;
 }
 
 .destination .slider_AutoScroll {
     margin-block: 5rem;
-    
+
     /*  To ensure that the slices do not stick to the edge * */
     padding: 0 25px;
+}
+
+@media screen and (max-width:767px) {
+    .opinion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }

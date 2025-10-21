@@ -1,0 +1,191 @@
+.card-holiday {
+    max-width: 33%;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    border-radius: 4px;
+    padding: 3rem;
+    text-align: start;
+
+}
+
+.card-holiday h2 {
+    font-family: var(--Urbanist-font);
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card-holiday h2 sup {
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.5rem;
+}
+
+.card-holiday h2 small {
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-holiday .all-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-block: 20px;
+}
+
+.card-holiday .all-images img:nth-child(1) {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.card-holiday .all-images img:nth-child(2) {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+
+}
+
+.card-holiday h4 {
+    font-family: var(--Urbanist-font);
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.card-holiday p {
+    font-family: var(--Urbanist-font);
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    padding-block: 10px 20px;
+    border-bottom: 1px solid rgb(223, 217, 217);
+    width: 80%;
+}
+
+.card-holiday ul {
+    margin-block: 10px;
+}
+
+.card-holiday ul li .icon {
+    font-size: 18px;
+    padding: 2px;
+    stroke-width: 5px;
+    color: var(--text-color);
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    margin-right: 5px;
+}
+
+.card-holiday ul li {
+    font-size: 1.1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 600;
+    color: var(--pg-color);
+    margin-bottom: 8px;
+}
+
+.card-holiday button {
+    margin-top: 10px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--pg-color);
+    color: var(--white);
+    word-spacing: 2px;
+    font-size: 1rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 500;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.card-holiday button::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: var(--prim-gradiant);
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    transition: 0.5s;
+}
+
+.card-holiday button:hover::before {
+    width: 100%;
+}
+
+
+@media screen and (max-width:1424px) {
+    .card-holiday p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .card-holiday h4 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:1236px) {
+    .card-holiday {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:1212px) {
+    .card-holiday {
+        padding: 1.5rem;
+    }
+
+    .card-holiday ul li {
+        font-size: 1rem;
+    }
+
+    .card-holiday p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .card-holiday p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:993px) {
+    .card-holiday {
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 3rem;
+    }
+
+    .card-holiday h4 {
+        font-size: 2rem;
+    }
+
+    .card-holiday p {
+        width: 98%;
+        font-size: 1.2rem;
+    }
+
+    .card-holiday ul li {
+        font-size: 1.1rem;
+    }
+}

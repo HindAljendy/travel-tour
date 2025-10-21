@@ -1,0 +1,29 @@
+.images img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    margin: 0 -10px;
+}
+
+@media screen and (max-width:1399px) {
+    .images img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .images img {
+        width: 60px;
+        height: 60px
+    }
+}
+
+@media screen and (max-width: 410px) and (min-width: 390px) {
+    .images img {
+        width: 55px;
+        height: 55px
+    }
+
+}

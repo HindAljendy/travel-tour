@@ -1,0 +1,8 @@
+.no-found {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-family: var(--Urbanist-font);
+    font-weight: 600;
+}
+

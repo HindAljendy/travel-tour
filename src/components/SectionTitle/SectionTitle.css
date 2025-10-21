@@ -34,6 +34,7 @@
 }
 .section-title p {
     font-family: var(--Urbanist-font);
+    color: var(--secondary);
     font-size: 1.2rem;
     text-align: center;
     width: 30%;

@@ -1,0 +1,105 @@
+.btn-box {
+    width: 220px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.btn-box button {
+    width: 220px;
+    height: 60px;
+    background: var(--prim-gradiant);
+    border-radius: 50px;
+    border: none;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+
+    transition: 0.5s;
+}
+
+.btn-box button::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    z-index: -1;
+
+    transition: 0.5s;
+
+}
+
+.btn-box button:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.btn-box button img {
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+.btn-box button:hover img {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.btn-box button:hover {
+    padding-left: 50px;
+}
+
+.btn-box button:after {
+    content: url('../../assets/btn-arrow.svg');
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.btn-box button:hover::after {
+    opacity: 1;
+    left: 20%;
+}
+
+/* Responsive */
+@media screen and (max-width:1399px) {
+    .btn-box {
+        width: 190px;
+    }
+
+    .btn-box button {
+        width: 190px;
+        font-size: 1rem;
+    }
+
+    .btn-box button:hover::after {
+        left: 18%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .btn-box button {
+        font-size: 0.9rem;
+    }
+}
