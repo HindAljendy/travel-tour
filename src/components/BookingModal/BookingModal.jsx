@@ -25,7 +25,7 @@ const BookingModal = ({ handleCloseModal, item }) => {
 
     return (
         <div className='BookingModal'>
-            <div className="modal-body">3
+            <div className="modal-body">
                 <div className='left'>
                     <h4>Travellers</h4>
                     <div className="cards">
@@ -43,7 +43,14 @@ const BookingModal = ({ handleCloseModal, item }) => {
                                         type="number"
                                         min={1}
                                         value={adultCount}
-                                        onChange={(e) => setAdultCount(Number(e.target.value))}
+                                        onChange={(e) => {
+                                            const val = parseInt(e.target.value);
+                                            if (!isNaN(val) && val >= 1) {
+                                                setAdultCount(val);
+                                            } else if (e.target.value === '') {
+                                                setAdultCount(1);
+                                            }
+                                        }}
                                     />
                                 </div>
                             </div>
@@ -63,13 +70,20 @@ const BookingModal = ({ handleCloseModal, item }) => {
                                         type="number"
                                         min={1}
                                         value={childCount}
-                                        onChange={(e) => setChildCount(Number(e.target.value))}
+                                        onChange={(e) => {
+                                            const val = parseInt(e.target.value);
+                                            if (!isNaN(val) && val >= 1) {
+                                                setChildCount(val);
+                                            } else if (e.target.value === '') {
+                                                setChildCount(1);
+                                            }
+                                        }}
                                     />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <button>Proceed To Checkout</button>
                 </div>
 
