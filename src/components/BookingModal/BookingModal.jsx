@@ -42,6 +42,7 @@ const BookingModal = ({ handleCloseModal, item }) => {
                                         name="numbers_adults"
                                         type="number"
                                         min={1}
+                                        max={10}
                                         step={1}
                                         value={adultCount}
                                         onChange={(e) => {
@@ -70,6 +71,7 @@ const BookingModal = ({ handleCloseModal, item }) => {
                                         name="numbers_childs"
                                         type="number"
                                         min={1}
+                                        max={10}
                                         step={1}
                                         value={childCount}
                                         onChange={(e) => {
