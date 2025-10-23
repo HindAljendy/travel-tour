@@ -42,6 +42,7 @@ const BookingModal = ({ handleCloseModal, item }) => {
                                         name="numbers_adults"
                                         type="number"
                                         min={1}
+                                        step={1}
                                         value={adultCount}
                                         onChange={(e) => {
                                             const val = parseInt(e.target.value);
@@ -69,6 +70,7 @@ const BookingModal = ({ handleCloseModal, item }) => {
                                         name="numbers_childs"
                                         type="number"
                                         min={1}
+                                        step={1}
                                         value={childCount}
                                         onChange={(e) => {
                                             const val = parseInt(e.target.value);
