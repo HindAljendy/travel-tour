@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import './BookingModal.css'
 import { FaTimes } from 'react-icons/fa'
+import { BiArrowFromTop, BiArrowToTop } from 'react-icons/bi';
 
 const BookingModal = ({ handleCloseModal, item }) => {
 
     //!  Booking Summary :
+
     const [adultCount, setAdultCount] = useState(1);
     const [childCount, setChildCount] = useState(1);
 
@@ -22,6 +24,23 @@ const BookingModal = ({ handleCloseModal, item }) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     const formattedDate = currentDate.toLocaleDateString('en-US', options);
 
+    /* functions: increment , decrement */
+    const handleAdultIncrement = () => {
+        setAdultCount(prev => prev + 1);
+    };
+
+    const handleAdultDecrement = () => {
+        setAdultCount(prev => Math.max(prev - 1, 1));//This is to ensure that the value is not less than 1, so no number less than 1 is allowed.
+    };
+
+    const handleChildIncrement = () => {
+        setChildCount(prev => prev + 1);
+    };
+
+    const handleChildDecrement = () => {
+        setChildCount(prev => Math.max(prev - 1, 1));
+    };
+
 
     return (
         <div className='BookingModal'>
@@ -38,22 +57,16 @@ const BookingModal = ({ handleCloseModal, item }) => {
                                 <span>{item.price}</span>
 
                                 <div className='field'>
+                                    <BiArrowFromTop className='arrow-decrement' onClick={handleAdultDecrement} />
                                     <input
                                         name="numbers_adults"
                                         type="number"
+                                        readOnly
                                         min={1}
-                                        max={10}
-                                        step={1}
                                         value={adultCount}
-                                        onChange={(e) => {
-                                            const val = parseInt(e.target.value);
-                                            if (!isNaN(val) && val >= 1) {
-                                                setAdultCount(val);
-                                            } else if (e.target.value === '') {
-                                                setAdultCount(1);
-                                            }
-                                        }}
+                                        onChange={(e) => setAdultCount(Number(e.target.value))}
                                     />
+                                    <BiArrowToTop className='arrow-increment' onClick={handleAdultIncrement} />
                                 </div>
                             </div>
                         </div>
@@ -67,28 +80,22 @@ const BookingModal = ({ handleCloseModal, item }) => {
                                 <span>{item.price_child}</span>
 
                                 <div className='field'>
+                                    <BiArrowFromTop className='arrow-decrement' onClick={handleChildDecrement} />
                                     <input
                                         name="numbers_childs"
                                         type="number"
+                                        readOnly
                                         min={1}
-                                        max={10}
-                                        step={1}
                                         value={childCount}
-                                        onChange={(e) => {
-                                            const val = parseInt(e.target.value);
-                                            if (!isNaN(val) && val >= 1) {
-                                                setChildCount(val);
-                                            } else if (e.target.value === '') {
-                                                setChildCount(1);
-                                            }
-                                        }}
+                                        onChange={(e) => setChildCount(Number(e.target.value))}
                                     />
+                                    <BiArrowToTop className='arrow-increment' onClick={handleChildIncrement} />
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <button>Proceed To Checkout</button>
+                    <button className='checkout'>Proceed To Checkout</button>
                 </div>
 
                 <div className='right'>
