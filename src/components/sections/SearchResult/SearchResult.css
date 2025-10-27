@@ -1,0 +1,128 @@
+.search-result .content-pageSearch h3 {
+    font-family: var(--Urbanist-font);
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.search-result .content-pageSearch h3 span {
+    color: var(--light-blue);
+    margin-inline: 10px;
+}
+
+.search-result .content-pageSearch h4 {
+    font-family: var(--Urbanist-font);
+    font-size: 1.2rem;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.search-result .content-pageSearch .show-result {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.search-result .content-pageSearch .show-result .card-tour {
+    width: 30%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 2.5rem;
+}
+
+.search-result .content-pageSearch .show-result .BigCardBlog {
+    width: 30%;
+    height: 860px;
+    margin-bottom: 2.5rem;
+}
+
+/* Responsive: */
+@media screen and (max-width:1450px) {
+    .search-result .content-pageSearch h3 {
+        font-size: 1.2rem;
+    }
+
+    .search-result .content-pageSearch h4 {
+        font-size: 1.1rem;
+    }
+
+    .search-result .content-pageSearch .show-result .BigCardBlog .body-card span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .search-result .content-pageSearch .show-result .BigCardBlog {
+        height: 870px;
+    }
+
+    .search-result .content-pageSearch .show-result .BigCardBlog .body-card span {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:1252px) {
+    .search-result .content-pageSearch .show-result .BigCardBlog {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width:1215px) {
+    .search-result .content-pageSearch .show-result .BigCardBlog {
+        height: 920px;
+    }
+}
+
+
+@media screen and (max-width:1199px) {
+    .search-result .content-pageSearch .show-result .BigCardBlog .body-card .details-publish {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1058px) {
+    .search-result .content-pageSearch .show-result .BigCardBlog {
+        height: 990px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .search-result .content-pageSearch .show-result .card-tour {
+        width: 48%;
+    }
+
+    .search-result .content-pageSearch .show-result .BigCardBlog {
+        width: 48%;
+        height: 850px;
+    }
+}
+
+@media screen and (max-width:833px) {
+    .search-result .content-pageSearch .show-result .BigCardBlog {
+        width: 48%;
+        height: 870px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .search-result .content-pageSearch .show-result {
+        flex-direction: column;
+    }
+
+    .search-result .content-pageSearch .show-result .BigCardBlog {
+        width: 90%;
+        height: 100%;
+    }
+
+    .search-result .content-pageSearch .show-result .card-tour {
+        width: 90%;
+    }
+
+}

@@ -203,7 +203,9 @@ const AllToursDestinations = () => {
                                             tourData={tour}
                                         />
                                     ))
-                                ) : null
+                                ) : (
+                                    <p className='no-found'>No matching tours found .</p>
+                                )
                             }
                         </div>
                     </div>

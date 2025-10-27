@@ -11,7 +11,9 @@ import Tours_Details from './pages/Tours_Details/Tours_Details'
 import Destinations_Details from './pages/Destinations_Details/Destinations_Details'
 import { useEffect } from 'react'
 import Blog_Details from './pages/Blog_Details/Blog_Details'
-
+import SearchResultPage from './pages/SearchResultPage/SearchResultPage'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -23,13 +25,16 @@ function App() {
 
   return (
     <>
+
+      <ToastContainer/>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
 
         <Route path="/blog" element={<Blog />} />
-         {/* hide id from URL: */}
+        {/* hide id from URL: */}
         <Route path="/blog-details" element={<Blog_Details />} />
 
         <Route path="/tour" element={<Tours />} />
@@ -39,6 +44,9 @@ function App() {
         <Route path="/destinations" element={<Destinations />} />
         {/* show id in URL: */}
         <Route path="/destination-details/:id" element={<Destinations_Details />} />
+
+        <Route path="/search-result" element={<SearchResultPage />} />
+
       </Routes>
 
       {location.pathname !== '/' && <FooterPage />}

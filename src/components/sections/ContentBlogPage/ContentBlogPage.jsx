@@ -53,7 +53,7 @@ const ContentBlogPage = () => {
                     </div>
 
                     <div className="part-right">
-                        <div className='posts-info'>
+                        <div className='posts-info'>                
                             <div className="search">
                                 <span>Search</span>
                                 <div className='input-search'>

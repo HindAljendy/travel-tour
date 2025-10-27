@@ -3,6 +3,7 @@
     height: 80px;
     padding: 0 12%;
     border: 1px solid rgba(208, 201, 201, 0.5);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 
@@ -27,7 +28,7 @@
 
 .navbar.light-nav .content .navlinks a,
 .navbar.light-nav .logo,
-.navbar.light-nav .search ,
+.navbar.light-nav .search,
 .navbar.light-nav .hamburger {
     color: #000
 }
@@ -104,9 +105,9 @@
     }
 
     .search {
-        display: none;
+        font-size: 1.2rem;
+        margin-left: 15px;
     }
-
 
     .navbar .content .navlinks {
         flex-direction: column;
