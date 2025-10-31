@@ -96,15 +96,15 @@
 
 /*  Targeting animation on the active slick-slide  (.slick-current )      - with delay .. */
 .container-hero .slick-current img {
-    animation: Anim-zoom 1.5s forwards linear;
+    animation: Anim-zoom 2s forwards linear;
 }
 
 .container-hero .slick-current .info h2 {
-    animation: Anim-top 0.5s 0.9s forwards linear;
+    animation: Anim-top 0.5s 1s forwards linear;
 }
 
 .container-hero .slick-current .info button {
-    animation: Anim-bottom 0.5s forwards linear;
+    animation: Anim-bottom 0.5s  forwards linear;
 }
 
 .container-hero .slick-current .info h1 {

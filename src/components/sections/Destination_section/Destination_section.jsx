@@ -4,12 +4,18 @@ import SectionTitle from '../../SectionTitle/SectionTitle'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { motion } from "framer-motion";
 import Destninations from '../../../data/Destinations';
 import CardDestination from '../../CardDestination/CardDestination';
 import { Link } from 'react-router-dom';
 
 const Destination_section = () => {
+
+  //! Animation
+  const sectionTitleVariants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   const sliderRef = useRef(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -41,11 +47,21 @@ const Destination_section = () => {
   };
   return (
     <div className='section destination'>
-      <SectionTitle
-        small_title="Travel Destinatinations"
-        title="Top Destinations"
-        text="Explore our top destinations  voted by more than 100,000+ customers around the world."
-      />
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8 }}
+        variants={sectionTitleVariants}
+      >
+        <SectionTitle
+          small_title="Travel Destinatinations"
+          title="Top Destinations"
+          text="Explore our top destinations  voted by more than 100,000+ customers around the world."
+        />
+
+      </motion.div>
+
 
       <div className="slider_AutoScroll">
         <Slider {...settings} ref={sliderRef}>

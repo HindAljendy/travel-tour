@@ -10,13 +10,33 @@ import check from './../../../assets/about-check.svg'
 import { BiPlay } from 'react-icons/bi'
 import Button from '../../Button/Button'
 import SmallImagesPersons from '../../SmallImagesPersons/SmallImagesPersons'
+import { motion } from "framer-motion";
+
 
 const About_section = () => {
+
+    //! Animation
+    const sectionLeftVariants = {
+        hidden: { opacity: 0, x: -100 },
+        visible: { opacity: 1, x: 0 },
+    };
+    const sectionRightVariants = {
+        hidden: { opacity: 0, x: 100 },
+        visible: { opacity: 1, x: 0 },
+    };
+
     return (
         <div className='section about'>
             <div className="container">
                 <div className='row'>
-                    <div className='left'>
+                    <motion.div
+                        className='left'
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.8 }}
+                        variants={sectionLeftVariants}
+                    >
                         <SectionTitle
                             small_title="About our Company"
                             title="Experience the World with Our Company"
@@ -50,14 +70,21 @@ const About_section = () => {
 
                             <Button />
 
-                            <SmallImagesPersons/>
+                            <SmallImagesPersons />
                             <p>5.2+ Satisfied Clients.</p>
                         </div>
 
-                    </div>
+                    </motion.div>
 
 
-                    <div className='right'>
+                    <motion.div
+                        className='right'
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        variants={sectionRightVariants}
+                    >
                         <div className="about-image">
                             <img src={aboutImg1} alt="about-image1" className='about-ImgBig' />
                             <img src={aboutE1} alt="" className='about-element1' />
@@ -65,7 +92,7 @@ const About_section = () => {
                             <img src={aboutE3} alt="" className='about-element3' />
                         </div>
 
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

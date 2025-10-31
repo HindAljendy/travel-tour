@@ -1,5 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Navbar from '../../components/Navbar/Navbar'
+import HeroPage from '../../components/sections/HeroPage/HeroPage'
+import ContactSection from '../../components/sections/ContactUs_section/ContactSection'
 
 
 const ContactUs = () => {
@@ -11,7 +14,9 @@ const ContactUs = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div>ContactUs</div>
+      <Navbar />
+      <HeroPage title="Contact" />
+      <ContactSection/>
     </motion.div>
 
   )

@@ -1,0 +1,72 @@
+.SocialContact {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.SocialContact .social-icon {
+    width: 25%;
+    height: 80px;
+    border-radius: 60px;
+    border: 1.5px solid var(--icon-sec-color);
+    color: var(--icon-sec-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.SocialContact .social-icon:hover {
+    background-color: var(--icon-sec-color);
+    color: var(--white);
+}
+
+.SocialContact .social-icon:first-child {
+    border: 1.5px solid var(--icon-prim-color);
+    color: var(--icon-prim-color);
+    transition: 0.5s;
+}
+
+.SocialContact .social-icon:first-child:hover {
+    background-color: var(--icon-prim-color);
+    color: var(--white);
+}
+
+/* Responsive: */
+@media screen and (max-width:1399px) {
+    .SocialContact .social-icon {
+        height: 55px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .SocialContact {
+        justify-content: space-between;
+    }
+
+    .SocialContact .social-icon {
+        width: 22%;
+    }
+}
+@media screen and (max-width:650px) {
+    .SocialContact {
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .SocialContact .social-icon {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .SocialContact .social-icon {
+        width: 45%;
+    }
+}

@@ -1,0 +1,184 @@
+.section.contact-us {
+    padding-bottom: 0px;
+}
+
+.contact-us .title-contact {
+    width: 40%;
+}
+
+.contact-us .title-contact h2 {
+    font-family: var(--Urbanist-font);
+    font-size: 3.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.contact-us .content-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-us .content-contact .left {
+    width: 47%;
+    height: 569px;
+    border-radius: 15px;
+    padding: 30px;
+    background: url('../../../assets/new/contact-bg.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.contact-us .content-contact .right {
+    width: 46%;
+}
+
+.contact-us .content-contact .right form {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: var(--top-color);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.contact-us .content-contact .right form input,
+.contact-us .content-contact .right form textarea {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    font-family: var(--Urbanist-font);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.contact-us .content-contact .right form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-us .content-contact .right form .btn-send {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--icon-prim-color);
+    color: var(--white);
+    border-radius: 20px;
+    font-family: var(--Urbanist-font);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+.contact-us .content-contact .right form .btn-send:hover {
+    background-color: var(--btn-dark);
+}
+
+.contact-us .map {
+    margin-top: 5rem;
+}
+
+/* Rrsponsive : */
+@media screen and (max-width:1600px) {
+    .contact-us .title-contact {
+        width: 35%;
+    }
+
+    .contact-us .title-contact h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width:1472px) {
+    .contact-us .title-contact {
+        width: 40%;
+    }
+
+    .contact-us .title-contact h2 {
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .contact-us .title-contact {
+        width: 45%;
+    }
+
+    .contact-us .title-contact h2 {
+        font-size: 2.9rem;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .contact-us .title-contact {
+        width: 46%;
+    }
+
+    .contact-us .title-contact h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-us .content-contact .left {
+        width: 50%;
+    }
+
+    .contact-us .content-contact .right form input,
+    .contact-us .content-contact .right form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-us .content-contact .right form .btn-send {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .contact-us .content-contact {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+
+    .contact-us .content-contact .left {
+        width: 100%
+    }
+
+    .contact-us .content-contact .right {
+        width: 100%;
+    }
+
+    .contact-us .title-contact {
+        width:100%;
+    }
+
+    .contact-us .title-contact h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-us .content-contact .right form input,
+    .contact-us .content-contact .right form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-us .content-contact .right form .btn-send {
+        font-size: 1rem;
+    }
+}
