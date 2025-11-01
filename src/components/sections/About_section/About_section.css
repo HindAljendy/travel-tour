@@ -12,6 +12,8 @@
 .about .row {
     display: flex;
     justify-content: space-between;
+    
+    overflow: hidden;
 }
 
 .about .row .left {

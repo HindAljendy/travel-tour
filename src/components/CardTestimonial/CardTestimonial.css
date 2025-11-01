@@ -5,6 +5,7 @@
     align-items: center;
     gap: 20px;
 
+    overflow: hidden;
 }
 
 .card-testimonial .img-card {
@@ -13,8 +14,6 @@
     z-index: 1;
 
     opacity: 0;
-    animation: fade-right 0.6s 0.6s forwards linear;
-
 }
 
 .card-testimonial .img-card img {
@@ -33,8 +32,6 @@
     background-color: #8fced6;
     border-radius: 20px;
     z-index: -1;
-
-    animation: fade-width 1s 1.2s forwards linear;
 }
 
 .card-testimonial .img-card::before {
@@ -48,8 +45,6 @@
     background-color: #e9f5f7;
     z-index: -1;
     border-radius: 20px;
-
-    animation: fade-width 1s 0.8s forwards linear;
 }
 
 .card-testimonial .card-content {
@@ -70,22 +65,19 @@
 
 .card-testimonial .card-content .quote {
     width: 60px;
-    /*  opacity: 0; */
-    animation: fade-bottom 0.6s 2s forwards linear;
 
+    opacity: 0;
 }
 
 .card-testimonial .card-content p {
     font-family: var(--Urbanist-font);
     font-size: 1.3rem;
 
-    /*   opacity: 0; */
-    animation: fade-bottom 0.6s 2.3s forwards linear;
+    opacity: 0;
 }
 
 .card-testimonial .card-content .starts {
-    /*  opacity: 0; */
-    animation: fade-bottom 0.6s 2.5s forwards linear;
+    opacity: 0;
 }
 
 .card-testimonial .card-content .starts .icon {
@@ -98,9 +90,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
-    /* opacity: 0; */
-    animation: fade-bottom 0.6s 2.7s forwards linear;
 }
 
 .card-testimonial .card-content .user img {
@@ -110,8 +99,7 @@
     padding: 5px;
     border: 1px solid var(--primary-color);
 
-    animation: fade-bottom 0.6s 2s forwards linear;
-
+    opacity: 0;
 }
 
 .card-testimonial .card-content .user .user-details h3 {
@@ -120,8 +108,7 @@
     color: var(--primary-dark);
     font-weight: 500;
 
-    /* opacity: 0; */
-    animation: fade-bottom 0.6s 2.9s forwards linear;
+    opacity: 0;
 }
 
 .card-testimonial .card-content .user .user-details .paragraph {
@@ -132,21 +119,51 @@
     margin-top: 8px;
     width: 100%;
 
-
-    /* opacity: 0; */ /* بداية غير مرئية */
-   /*  transform: translateY(100px); /* بداية من الأسفل  */
-   /*  transition: opacity 0.6s ease, transform 1s ease; */
-}
-
-/* الحالة عند تفعيل الانيميشن */
-.animate {
-  animation: fade-bottom 5s 3.1s forwards linear; 
-
-
+    opacity: 0;
 }
 
 
 /* Animation */
+
+/*  Targeting animation on the active slick-slide  (.slick-current )      - with delay .. */
+.Slider-testimonials .slick-current .img-card {
+    animation: fade-right 0.6s 0.6s forwards linear;
+}
+
+.Slider-testimonials .slick-current .img-card::before {
+    animation: fade-width 1s 0.8s forwards linear;
+}
+
+.Slider-testimonials .slick-current .img-card::after {
+    animation: fade-width 1s 1.2s forwards linear;
+}
+
+.Slider-testimonials .slick-current .quote {
+    animation: fade-bottom 0.6s 2s forwards linear;
+}
+
+
+.Slider-testimonials .slick-current p {
+    animation: fade-bottom 0.6s 2.3s forwards linear;
+}
+
+.Slider-testimonials .slick-current .starts {
+    animation: fade-bottom 0.6s 2.5s forwards linear;
+}
+
+.Slider-testimonials .slick-current .user img {
+    animation: fade-bottom 0.6s 2.7s forwards linear;
+}
+
+.Slider-testimonials .slick-current .user .user-details h3 {
+    animation: fade-bottom 0.6s 2.9s forwards linear;
+}
+
+.Slider-testimonials .slick-current .user .user-details .paragraph {
+    animation: fade-bottom 0.6s 3.1s forwards linear;
+}
+
+
 @keyframes fade-right {
     0% {
         opacity: 0;

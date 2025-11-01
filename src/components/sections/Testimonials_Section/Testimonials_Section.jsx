@@ -29,7 +29,7 @@ const Testimonials_Section = () => {
         speed: 800,
         initialSlide: 0,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         cssEase: "linear",
     };
 
